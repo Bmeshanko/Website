@@ -2320,8 +2320,12 @@ input, select, textarea {
 			display: block;
 		}
 
-		.image.left, .image.right {
+		.image.left {
 			max-width: 40%;
+		}
+
+		.image.right {
+			width: 60%;
 		}
 
 			.image.left img, .image.right img {
@@ -2330,14 +2334,10 @@ input, select, textarea {
 
 		.image.left {
 			float: left;
-			padding: 0 1.5em 1em 0;
-			top: 0.25em;
 		}
 
 		.image.right {
 			float: right;
-			padding: 0 0 1em 1.5em;
-			top: 0.25em;
 		}
 
 		.image.fit {
