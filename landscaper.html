@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Travelling Landscaper</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+                    <h2>Menu</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About Me</a></li>
+						<li><a href="pdfs/resume.pdf">Resume</a></li>
+						<li><a href="coursework.html">Coursework</a></li>
+                    </ul>
+                </nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<header class="text">
+								<h1>Travelling Landscaper Cloud Project</h1>
+								<p>
+                                    For my CS351 Cloud Computing course, we were assigned an open-ended course project, allowing essentially
+                                    anything related to the Cloud. People wrote research papers, built personal Cloud-gaming services, and 
+                                    almost anything imaginable. I wanted to use Google Maps APIs to implement the famous Travelling Salesman
+                                    Problem and apply it to my previous summer job: designing an optimized landscaping route.
+                                    <br><br>
+                                    There were four stages of the software pipeline to turn a list of 40 addresses into two lists of correctly
+                                    ordered routes:<br>
+                                    <li>Convert the Addresses to Lat/Long Coordinates using Google Cloud Platform's (GCP's) Geocoding API.</li>
+                                    <li>K Means Clustering algorithm to generate the geometric center, which is then used to form two clusters
+                                        that contain half of the addresses.
+                                    </li>
+                                    <li>Generate 2 separate distance matrices using GCP's Distance Matrix API.</li>
+                                    <li>Solving the Travelling Salesman Problem for both of the two distance matrices with a Dynanmic Programming
+                                        Algorithm that runs in exponential time. The algorithm will output the most efficient route.
+                                    </li>
+                                    <br>
+                                    Here is an example of one of the routes that was generated (Source: MapQuest)
+                                    <span class="image">
+                                        <img src="images/route1.png" width="1200">
+                                    </span><br><br>
+								</p>
+							</header>
+						</div>
+					</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
